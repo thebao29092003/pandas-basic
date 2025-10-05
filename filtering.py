@@ -14,7 +14,7 @@ print(bios.loc[(bios['height_cm'] > 215) & (bios['born_country'] == "USA"),
 # tìm athletes có tên chứa Keith hoặc patrick có phân biệt chữ hoa thường
 print(bios.loc[bios['name'].str.contains("Keith|patrick", case=True)])
 
-# dùng regex tìm athletes với tên kết thước bằng son hoặc sen và ko
+# dùng regex tìm athletes với tên kết thúc bằng son hoặc sen và ko
 # có giá trị null cột name
 print(bios.loc[bios['name'].str.contains(r'son$|sen$', case=False, na=False)])
 
